@@ -1,187 +1,211 @@
 ﻿{
     "shapes":  [
                    {
-                       "y2":  330,
-                       "text":  "AlarmLimitRecommendDetailViewQML`n--------------------------------`n+currentRecommendItem`n+onClicked: handle_recommend(paramId, type, true/false)",
+                       "y2":  176,
+                       "text":  [
+                                    "AlarmLimitRecommendDetailViewQML",
+                                    "Rect"
+                                ],
                        "style":  {
                                      "line":  "RGB(128,93,255)",
                                      "weight":  1,
-                                     "align":  0,
-                                     "fontSize":  9,
+                                     "bold":  true,
+                                     "fontSize":  8,
                                      "fill":  "RGB(239,238,255)"
                                  },
                        "type":  "rect",
-                       "y1":  150,
-                       "x1":  20,
-                       "x2":  520
+                       "y1":  140,
+                       "x1":  30,
+                       "x2":  510
                    },
                    {
-                       "y2":  555,
-                       "text":  "AlarmLimitRecommendSettingsViewQML`n--------------------------------`n+ComboBox analysisDuration`n+ComboBox alarmCount`n+ComboBox alarmTimePercent`n+CheckBox recommendParams",
+                       "y2":  426,
+                       "text":  [
+                                    "AlarmLimitRecommendSettingsViewQML",
+                                    "Rect"
+                                ],
                        "style":  {
                                      "line":  "RGB(128,93,255)",
                                      "weight":  1,
-                                     "align":  0,
-                                     "fontSize":  9,
+                                     "bold":  true,
+                                     "fontSize":  8,
                                      "fill":  "RGB(239,238,255)"
                                  },
                        "type":  "rect",
                        "y1":  390,
-                       "x1":  95,
-                       "x2":  440
+                       "x1":  120,
+                       "x2":  480
                    },
                    {
-                       "y2":  675,
-                       "text":  "QObject",
+                       "y2":  646,
+                       "text":  [
+                                    "QObject",
+                                    "Rect"
+                                ],
                        "style":  {
                                      "line":  "RGB(128,93,255)",
                                      "weight":  1,
-                                     "align":  0,
-                                     "fontSize":  9,
+                                     "bold":  true,
+                                     "fontSize":  8,
                                      "fill":  "RGB(239,238,255)"
                                  },
                        "type":  "rect",
-                       "y1":  600,
-                       "x1":  230,
-                       "x2":  305
+                       "y1":  610,
+                       "x1":  270,
+                       "x2":  370
                    },
                    {
-                       "y2":  890,
-                       "text":  "AlarmLimitRecommendDetailView`n--------------------------------",
+                       "y2":  846,
+                       "text":  [
+                                    "AlarmLimitRecommendDetailView",
+                                    "Rect"
+                                ],
                        "style":  {
                                      "line":  "RGB(128,93,255)",
                                      "weight":  1,
-                                     "align":  0,
-                                     "fontSize":  9,
+                                     "bold":  true,
+                                     "fontSize":  8,
                                      "fill":  "RGB(239,238,255)"
                                  },
                        "type":  "rect",
-                       "y1":  815,
-                       "x1":  145,
-                       "x2":  390
+                       "y1":  810,
+                       "x1":  150,
+                       "x2":  450
                    },
                    {
-                       "y2":  420,
-                       "text":  "AlarmLimitRecommendSettingsView`n--------------------------------",
+                       "y2":  366,
+                       "text":  [
+                                    "AlarmLimitRecommendSettingsView",
+                                    "Rect"
+                                ],
                        "style":  {
                                      "line":  "RGB(128,93,255)",
                                      "weight":  1,
-                                     "align":  0,
-                                     "fontSize":  9,
+                                     "bold":  true,
+                                     "fontSize":  8,
                                      "fill":  "RGB(239,238,255)"
                                  },
                        "type":  "rect",
-                       "y1":  345,
-                       "x1":  730,
-                       "x2":  990
+                       "y1":  330,
+                       "x1":  770,
+                       "x2":  1110
                    },
                    {
-                       "y2":  735,
-                       "text":  "AlarmLimitRecommendManager`n--------------------------------`n+Q_PROPERTY AlarmLimitRecommendSettingModel* settingModel`n+Q_PROPERTY AlarmLimitRecommendModel* recommendModel`n-AlarmLimitRecommendSettingModel* setting_model_`n-AlarmLimitRecommendModel* recommend_model_`n--------------------------------`n+handle_recommend(param_id, type, is_accept)`n+subscribe_recommend_updates()`n+on_recommend_update_received(update)`n+is_feature_visible()",
+                       "y2":  536,
+                       "text":  [
+                                    "AlarmLimitRecommendManager",
+                                    "Rect"
+                                ],
                        "style":  {
                                      "line":  "RGB(128,93,255)",
                                      "weight":  1,
-                                     "align":  0,
-                                     "fontSize":  7,
+                                     "bold":  true,
+                                     "fontSize":  8,
                                      "fill":  "RGB(239,238,255)"
                                  },
                        "type":  "rect",
-                       "y1":  470,
-                       "x1":  575,
-                       "x2":  1120
+                       "y1":  500,
+                       "x1":  650,
+                       "x2":  1210
                    },
                    {
-                       "y2":  645,
-                       "text":  "AlarmLimitRecommendSettingModel`n--------------------------------`n+Q_PROPERTY bool enabled`n+Q_PROPERTY QStringList recommendParamsOptions`n+Q_PROPERTY QStringList recommendParamsCurrent`n+Q_PROPERTY int analysisDurationIndex`n+Q_PROPERTY QVariantList analysisDurationOptions`n+Q_PROPERTY int alarmCountIndex`n+Q_PROPERTY QVariantList alarmCountOptions`n+Q_PROPERTY int alarmTimeRatioIndex`n+QStringList recommend_params_options_`nQStringList recommend_params_current_`nJIO_ComboBoxModelStruct analysis_duration_`nJIO_ComboBoxModelStruct alarm_count_group1_`nJIO_ComboBoxModelStruct alarm_count_group2_`nJIO_ComboBoxModelStruct alarm_count_group3_`nJIO_ComboBoxModelStruct alarm_time_percent_`n--------------------------------`n+detach_setting(data, from_restore)`n+to_json()`n+analysis_duration_seconds()`n+alarm_count_threshold()`n+alarm_time_ratio_threshold()`n+selected_param_ids()`n-switch_alarm_count_group(new_duration_index)`n-reset_alarm_time_ratio_to_default()",
+                       "y2":  76,
+                       "text":  [
+                                    "AlarmLimitRecommendSettingModel",
+                                    "Rect"
+                                ],
                        "style":  {
                                      "line":  "RGB(128,93,255)",
                                      "weight":  1,
-                                     "align":  0,
-                                     "fontSize":  7,
+                                     "bold":  true,
+                                     "fontSize":  8,
                                      "fill":  "RGB(239,238,255)"
                                  },
                        "type":  "rect",
-                       "y1":  20,
-                       "x1":  1220,
-                       "x2":  2290
+                       "y1":  40,
+                       "x1":  1370,
+                       "x2":  2200
                    },
                    {
-                       "y2":  945,
-                       "text":  "AlarmLimitRecommendModel`n--------------------------------`n+Q_PROPERTY bool hasRecommend`n+Q_PROPERTY QVariantList recommendItems`n-bool has_recommend_`n-QList\u003cAlarmLimitRecommendItem\u003e recommend_items_`n-QMap\u003cQString,int\u003e temp_recommend_limits_`n--------------------------------`n+get_recommend_detail(param_id, type)`n+set_recommend_limit(param_id, type, value)`n+update_items(items)`n+remove_item(param_id, type)`n+hasRecommendChanged()`n+recommendItemsChanged()",
+                       "y2":  756,
+                       "text":  [
+                                    "AlarmLimitRecommendModel",
+                                    "Rect"
+                                ],
                        "style":  {
                                      "line":  "RGB(128,93,255)",
                                      "weight":  1,
-                                     "align":  0,
-                                     "fontSize":  7,
+                                     "bold":  true,
+                                     "fontSize":  8,
                                      "fill":  "RGB(239,238,255)"
                                  },
                        "type":  "rect",
-                       "y1":  690,
-                       "x1":  1500,
-                       "x2":  2050
+                       "y1":  720,
+                       "x1":  1540,
+                       "x2":  2180
                    },
                    {
-                       "y2":  360,
+                       "y2":  340,
                        "text":  "持有",
                        "style":  {
                                      "fontSize":  8,
                                      "textColor":  "RGB(70,70,70)"
                                  },
                        "type":  "text",
-                       "y1":  330,
-                       "x1":  1160,
-                       "x2":  1230
+                       "y1":  310,
+                       "x1":  1280,
+                       "x2":  1365
                    },
                    {
-                       "y2":  410,
+                       "y2":  400,
                        "text":  "绑定",
                        "style":  {
                                      "fontSize":  8,
                                      "textColor":  "RGB(70,70,70)"
                                  },
                        "type":  "text",
-                       "y1":  380,
-                       "x1":  1180,
-                       "x2":  1240
+                       "y1":  370,
+                       "x1":  1260,
+                       "x2":  1355
                    },
                    {
-                       "y2":  745,
+                       "y2":  740,
                        "text":  "调用 handle_recommend",
                        "style":  {
                                      "fontSize":  8,
                                      "textColor":  "RGB(70,70,70)"
                                  },
                        "type":  "text",
-                       "y1":  715,
-                       "x1":  420,
-                       "x2":  570
+                       "y1":  710,
+                       "x1":  470,
+                       "x2":  635
                    },
                    {
-                       "y2":  865,
-                       "text":  "绑定 recommendItems / get_recommend_detail",
+                       "y2":  920,
+                       "text":  "绑定 recommendItems /\nget_recommend_detail",
                        "style":  {
                                      "fontSize":  8,
                                      "textColor":  "RGB(70,70,70)"
                                  },
                        "type":  "text",
-                       "y1":  825,
-                       "x1":  900,
-                       "x2":  1080
+                       "y1":  875,
+                       "x1":  980,
+                       "x2":  1240
                    },
                    {
-                       "y2":  770,
+                       "y2":  810,
                        "text":  "持有",
                        "style":  {
                                      "fontSize":  8,
                                      "textColor":  "RGB(70,70,70)"
                                  },
                        "type":  "text",
-                       "y1":  740,
-                       "x1":  1320,
-                       "x2":  1380
+                       "y1":  780,
+                       "x1":  1325,
+                       "x2":  1390
                    },
                    {
-                       "y2":  530,
+                       "y2":  575,
                        "arrow":  "end",
                        "type":  "line",
                        "style":  {
@@ -189,9 +213,132 @@
                                      "dash":  false,
                                      "line":  "RGB(90,90,90)"
                                  },
-                       "y1":  475,
-                       "x1":  440,
-                       "x2":  575
+                       "y1":  445,
+                       "x1":  480,
+                       "x2":  650
+                   },
+                   {
+                       "arrow":  "end",
+                       "points":  [
+                                      [
+                                          370,
+                                          660
+                                      ],
+                                      [
+                                          520,
+                                          660
+                                      ],
+                                      [
+                                          650,
+                                          650
+                                      ]
+                                  ],
+                       "type":  "polyline",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  true,
+                                     "line":  "RGB(90,90,90)"
+                                 }
+                   },
+                   {
+                       "arrow":  "end",
+                       "points":  [
+                                      [
+                                          450,
+                                          855
+                                      ],
+                                      [
+                                          560,
+                                          855
+                                      ],
+                                      [
+                                          650,
+                                          675
+                                      ]
+                                  ],
+                       "type":  "polyline",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  true,
+                                     "line":  "RGB(90,90,90)"
+                                 }
+                   },
+                   {
+                       "y2":  360,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  585,
+                       "x1":  1210,
+                       "x2":  1370
+                   },
+                   {
+                       "arrow":  "end",
+                       "points":  [
+                                      [
+                                          1110,
+                                          370
+                                      ],
+                                      [
+                                          1370,
+                                          370
+                                      ]
+                                  ],
+                       "type":  "polyline",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  true,
+                                     "line":  "RGB(90,90,90)"
+                                 }
+                   },
+                   {
+                       "y2":  815,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  740,
+                       "x1":  1210,
+                       "x2":  1540
+                   },
+                   {
+                       "arrow":  "end",
+                       "points":  [
+                                      [
+                                          450,
+                                          855
+                                      ],
+                                      [
+                                          1540,
+                                          855
+                                      ]
+                                  ],
+                       "type":  "polyline",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  true,
+                                     "line":  "RGB(90,90,90)"
+                                 }
+                   },
+                   {
+                       "y2":  275,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  215,
+                       "x1":  480,
+                       "x2":  1370
                    },
                    {
                        "y2":  610,
@@ -199,28 +346,15 @@
                        "type":  "line",
                        "style":  {
                                      "weight":  1,
-                                     "dash":  true,
+                                     "dash":  false,
                                      "line":  "RGB(90,90,90)"
                                  },
-                       "y1":  630,
-                       "x1":  305,
-                       "x2":  575
+                       "y1":  455,
+                       "x1":  480,
+                       "x2":  370
                    },
                    {
-                       "y2":  620,
-                       "arrow":  "end",
-                       "type":  "line",
-                       "style":  {
-                                     "weight":  1,
-                                     "dash":  true,
-                                     "line":  "RGB(90,90,90)"
-                                 },
-                       "y1":  850,
-                       "x1":  390,
-                       "x2":  575
-                   },
-                   {
-                       "y2":  350,
+                       "y2":  665,
                        "arrow":  "end",
                        "type":  "line",
                        "style":  {
@@ -228,94 +362,16 @@
                                      "dash":  false,
                                      "line":  "RGB(90,90,90)"
                                  },
-                       "y1":  530,
-                       "x1":  1120,
-                       "x2":  1220
-                   },
-                   {
-                       "y2":  385,
-                       "arrow":  "end",
-                       "type":  "line",
-                       "style":  {
-                                     "weight":  1,
-                                     "dash":  true,
-                                     "line":  "RGB(90,90,90)"
-                                 },
-                       "y1":  385,
-                       "x1":  990,
-                       "x2":  1220
-                   },
-                   {
-                       "y2":  790,
-                       "arrow":  "end",
-                       "type":  "line",
-                       "style":  {
-                                     "weight":  1,
-                                     "dash":  false,
-                                     "line":  "RGB(90,90,90)"
-                                 },
-                       "y1":  735,
-                       "x1":  1120,
-                       "x2":  1500
-                   },
-                   {
-                       "y2":  850,
-                       "arrow":  "end",
-                       "type":  "line",
-                       "style":  {
-                                     "weight":  1,
-                                     "dash":  true,
-                                     "line":  "RGB(90,90,90)"
-                                 },
-                       "y1":  850,
-                       "x1":  390,
-                       "x2":  1500
-                   },
-                   {
-                       "y2":  290,
-                       "arrow":  "end",
-                       "type":  "line",
-                       "style":  {
-                                     "weight":  1,
-                                     "dash":  false,
-                                     "line":  "RGB(90,90,90)"
-                                 },
-                       "y1":  250,
-                       "x1":  520,
-                       "x2":  1220
-                   },
-                   {
-                       "y2":  600,
-                       "arrow":  "end",
-                       "type":  "line",
-                       "style":  {
-                                     "weight":  1,
-                                     "dash":  false,
-                                     "line":  "RGB(90,90,90)"
-                                 },
-                       "y1":  475,
-                       "x1":  440,
-                       "x2":  230
-                   },
-                   {
-                       "y2":  640,
-                       "arrow":  "end",
-                       "type":  "line",
-                       "style":  {
-                                     "weight":  1,
-                                     "dash":  false,
-                                     "line":  "RGB(90,90,90)"
-                                 },
-                       "y1":  850,
-                       "x1":  390,
-                       "x2":  230
+                       "y1":  855,
+                       "x1":  450,
+                       "x2":  370
                    }
                ],
     "page":  {
                  "scalePxPerInch":  110,
-                 "heightPx":  980,
+                 "heightPx":  1050,
                  "name":  "Class Diagram Result",
-                 "widthPx":  2300
+                 "widthPx":  2250
              },
     "referenceImage":  "C:/Users/yuanlichu/Documents/Codex/2026-05-28/uigiuf-codex-visio-replica-workflow-https/assets/examples/class-diagram.png"
 }
