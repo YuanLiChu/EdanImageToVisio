@@ -1,33 +1,46 @@
-# Codex Visio Replica Workflow
+# EdanImageToVisio
 
-This repository contains a Codex skill for recreating reference diagrams, screenshots, whiteboard diagrams, architecture diagrams, flowcharts, and business diagrams in Microsoft Visio.
+This folder is an Agent Skill for recreating reference diagrams as editable Microsoft Visio `.vsdx` files. It can be used by Codex-style skill loaders and Claude Code skill loaders that support `SKILL.md`.
 
-It includes:
+It supports a practical workflow:
 
-- `SKILL.md`: the main skill instructions.
-- `agents/openai.yaml`: marketplace/display metadata.
-- `references/plan_schema_and_qa.md`: JSON plan schema and QA checklist.
-- `scripts/check_visio_environment.ps1`: Visio and export environment checker.
-- `scripts/create_visio_from_plan.ps1`: script for generating editable `.vsdx` files from a JSON plan.
+1. Inspect a reference image, screenshot, Mermaid export, flowchart, sequence diagram, or architecture diagram.
+2. Create a JSON drawing plan made of editable primitives.
+3. Run the bundled PowerShell script to draw the plan in Visio through COM automation.
+4. Save `.vsdx` and optionally export `.emf` preview.
+
+## Requirements
+
+- Windows
+- Microsoft Visio
+- PowerShell
 
 ## Install
 
-Copy the `codex-visio-replica-workflow` folder into your Codex skills directory:
+Copy the `edan-image-to-visio` folder into your Codex skills directory:
 
 ```powershell
 $skills = "$env:USERPROFILE\.codex\skills"
 New-Item -ItemType Directory -Force -Path $skills | Out-Null
-Copy-Item -Recurse -Force ".\codex-visio-replica-workflow" $skills
+Copy-Item -Recurse -Force ".\edan-image-to-visio" $skills
 ```
 
-Then restart Codex or reload skills.
+Restart Codex or reload skills.
+
+For Claude Code user-level installation, copy the same folder to:
+
+```powershell
+$skills = "$env:USERPROFILE\.claude\skills"
+New-Item -ItemType Directory -Force -Path $skills | Out-Null
+Copy-Item -Recurse -Force ".\edan-image-to-visio" $skills
+```
 
 ## Example Prompt
 
 ```text
-Use $codex-visio-replica-workflow to recreate this reference image as an editable Visio file, export a preview, and prepare a screen-recording friendly workflow.
+Use $edan-image-to-visio to recreate this reference diagram as an editable Visio file, export a preview, and explain any approximations.
 ```
 
 ## Notes
 
-This skill is designed for Windows environments with Microsoft Visio installed. The scripts use PowerShell and Visio COM automation.
+This skill is not an automatic image vectorizer. It relies on Codex to create a JSON diagram plan, then uses Visio COM automation to generate editable Visio shapes.

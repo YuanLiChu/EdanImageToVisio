@@ -1,18 +1,25 @@
-# Visio JSON 计划和质量检查
+# Visio JSON Plan Schema and QA
 
-当需要为 `scripts/create_visio_from_plan.ps1` 创建 JSON 计划时，读取本参考文件。
+Read this file before creating a JSON plan for `scripts/create_visio_from_plan.ps1`.
 
-## 最小示例
+The plan uses image-like coordinates:
+
+- Origin is the top-left corner.
+- `x` grows to the right.
+- `y` grows downward.
+- `scalePxPerInch` maps pixels to Visio page inches.
+
+## Minimal Example
 
 ```json
 {
   "page": {
-    "name": "系统架构复刻",
+    "name": "Architecture Replica",
     "widthPx": 1440,
     "heightPx": 928,
     "scalePxPerInch": 100
   },
-  "referenceImage": "C:/path/to/reference.jpg",
+  "referenceImage": "C:/workspace/reference.png",
   "shapes": [
     {
       "type": "rect",
@@ -34,7 +41,7 @@
       "y1": 35,
       "x2": 850,
       "y2": 75,
-      "text": "系统架构图",
+      "text": "System Architecture",
       "style": {
         "fontSize": 22,
         "textColor": "RGB(0,153,188)",
@@ -78,23 +85,93 @@
 }
 ```
 
-## 图形字段
+## Shape Types
 
-- `rect`：矩形，必须包含 `x1`、`y1`、`x2`、`y2`；可选 `text`、`style`。
-- `text`：文本框，坐标同矩形，但无填充、无边框。
-- `oval`：椭圆，必须包含外接矩形坐标；可选 `text`、`style`。
-- `line`：直线，必须包含起点和终点；`arrow` 可用 `none`、`begin`、`end`、`both`。
-- `polyline`：折线，必须包含 `points` 数组；默认只在最后一段加箭头。
+### `rect`
 
-坐标采用图片像素坐标：左上角为原点，x 向右增大，y 向下增大。
+Rectangle. Required fields:
 
-## 质量检查清单
+- `x1`, `y1`, `x2`, `y2`
 
-- 页面比例是否匹配参考图。
-- 外框和主要分区线是否先对齐。
-- 中文标签是否出现难看的换行或溢出。
-- 箭头方向是否与参考图一致。
-- 虚线边框是否清晰，但不要比内容框更重。
-- 预览文件是否能脱离 Visio 单独打开。
-- `.vsdx` 是否由可编辑图形组成，而不是只粘贴了一张位图。
-- 参考图是否放在独立页面，或与可编辑绘图明确分离。
+Optional:
+
+- `text`
+- `style`
+
+### `text`
+
+Text box drawn as a rectangle with no fill and no border.
+
+Required:
+
+- `x1`, `y1`, `x2`, `y2`
+- `text`
+
+Optional:
+
+- `style`
+
+### `oval`
+
+Oval inside a bounding box.
+
+Required:
+
+- `x1`, `y1`, `x2`, `y2`
+
+Optional:
+
+- `text`
+- `style`
+
+### `line`
+
+Straight line.
+
+Required:
+
+- `x1`, `y1`, `x2`, `y2`
+
+Optional:
+
+- `arrow`: `none`, `begin`, `end`, or `both`
+- `style`
+
+### `polyline`
+
+Multi-segment line.
+
+Required:
+
+- `points`: array of `[x, y]`
+
+Optional:
+
+- `arrow`: applied to the last segment
+- `style`
+
+## Style Fields
+
+- `fill`: Visio formula such as `RGB(255,255,255)`.
+- `line`: Visio formula such as `RGB(35,35,35)`.
+- `weight`: line weight in points.
+- `dash`: boolean.
+- `noFill`: boolean.
+- `noLine`: boolean.
+- `fontSize`: text size in points.
+- `textColor`: Visio formula such as `RGB(40,40,40)`.
+- `bold`: boolean.
+- `align`: Visio horizontal alignment integer. Use `0` for left and `1` for centered.
+
+## QA Checklist
+
+- Page aspect ratio matches the reference.
+- Large containers and boundaries are placed first.
+- Text is readable and not wildly overflowing.
+- Arrows point in the correct direction.
+- Dashed boundaries are visually clear.
+- Preview export can be opened without Visio.
+- `.vsdx` contains editable shapes rather than only one bitmap.
+- If a reference image is included, it is on a separate page from the editable drawing.
+- All output and image paths passed to Visio are absolute paths.
+- Reference image paths use ASCII-only names when possible.
