@@ -39,6 +39,11 @@ EdanImageToVisio 是一个 Agent Skill，用于把参考图片、截图、Mermai
 
 ![类图生成结果](assets/examples/results/class-diagram-result.png)
 
+可直接打开的示例文件：
+
+- [JSON 图形计划](assets/examples/results/class-diagram-plan.json)
+- [可编辑 Visio 文件](assets/examples/results/class-diagram-result.vsdx)
+
 ### 流程图
 
 流程图会优先保留开始/结束节点、处理节点、判断节点、分支标签和回环路径。转换成 `.vsdx` 后，每个节点和箭头都是独立对象，适合继续修改节点文字、调整分支走向或把长流程拆成多页。当前脚本暂不支持原生菱形节点，示例结果中使用可编辑矩形近似表达判断节点。
@@ -51,6 +56,11 @@ EdanImageToVisio 是一个 Agent Skill，用于把参考图片、截图、Mermai
 
 ![流程图生成结果](assets/examples/results/flowchart-result.png)
 
+可直接打开的示例文件：
+
+- [JSON 图形计划](assets/examples/results/flowchart-plan.json)
+- [可编辑 Visio 文件](assets/examples/results/flowchart-result.vsdx)
+
 ### 时序图
 
 时序图会优先保留参与者、生命线、同步/异步消息、虚线通知和自调用步骤。转换成 `.vsdx` 后，参与者框、竖向生命线、消息箭头和说明文本都可以单独编辑，适合把 Mermaid 生成的时序图整理成正式交付文档。
@@ -62,6 +72,11 @@ EdanImageToVisio 是一个 Agent Skill，用于把参考图片、截图、Mermai
 生成结果预览：
 
 ![时序图生成结果](assets/examples/results/sequence-diagram-result.png)
+
+可直接打开的示例文件：
+
+- [JSON 图形计划](assets/examples/results/sequence-diagram-plan.json)
+- [可编辑 Visio 文件](assets/examples/results/sequence-diagram-result.vsdx)
 
 ## 环境要求
 

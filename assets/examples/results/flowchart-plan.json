@@ -1,0 +1,889 @@
+﻿{
+    "shapes":  [
+                   {
+                       "y2":  65,
+                       "text":  "报警限推荐已触发",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "oval",
+                       "y1":  20,
+                       "x1":  335,
+                       "x2":  485
+                   },
+                   {
+                       "y2":  157,
+                       "text":  "主界面显示报警限推荐图标",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  105,
+                       "x1":  300,
+                       "x2":  520
+                   },
+                   {
+                       "y2":  335,
+                       "text":  "用户点击图标?",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  215,
+                       "x1":  315,
+                       "x2":  505
+                   },
+                   {
+                       "y2":  392,
+                       "text":  "打开报警限推荐详情页",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  340,
+                       "x1":  300,
+                       "x2":  520
+                   },
+                   {
+                       "y2":  540,
+                       "text":  "展示推荐参数、上下限方向、趋势图、推荐值",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  470,
+                       "x1":  250,
+                       "x2":  570
+                   },
+                   {
+                       "y2":  800,
+                       "text":  "用户是否手动调整推荐值?",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  650,
+                       "x1":  220,
+                       "x2":  600
+                   },
+                   {
+                       "y2":  955,
+                       "text":  "更新当前推荐值",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  900,
+                       "x1":  85,
+                       "x2":  295
+                   },
+                   {
+                       "y2":  1085,
+                       "text":  "重新计算预计减少报警比例",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  1030,
+                       "x1":  45,
+                       "x2":  340
+                   },
+                   {
+                       "y2":  1230,
+                       "text":  "刷新趋势图推荐线和预测结果",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  1160,
+                       "x1":  40,
+                       "x2":  345
+                   },
+                   {
+                       "y2":  1085,
+                       "text":  "保持系统计算的推荐值",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  1030,
+                       "x1":  610,
+                       "x2":  880
+                   },
+                   {
+                       "y2":  1400,
+                       "text":  "用户点击接受?",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  1290,
+                       "x1":  440,
+                       "x2":  630
+                   },
+                   {
+                       "y2":  1475,
+                       "text":  "校验推荐值合法性",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  1420,
+                       "x1":  420,
+                       "x2":  660
+                   },
+                   {
+                       "y2":  1680,
+                       "text":  "是否在安全报警限范围内?",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  1550,
+                       "x1":  380,
+                       "x2":  690
+                   },
+                   {
+                       "y2":  1865,
+                       "text":  "按安全上下限进行边界修正",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  1810,
+                       "x1":  135,
+                       "x2":  435
+                   },
+                   {
+                       "y2":  1865,
+                       "text":  "使用当前推荐值",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  1810,
+                       "x1":  700,
+                       "x2":  930
+                   },
+                   {
+                       "y2":  1995,
+                       "text":  "生成报警限更新请求",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  1940,
+                       "x1":  430,
+                       "x2":  690
+                   },
+                   {
+                       "y2":  2125,
+                       "text":  "调用现有报警限设置模块",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  2070,
+                       "x1":  405,
+                       "x2":  705
+                   },
+                   {
+                       "y2":  2255,
+                       "text":  "更新实际报警上限或下限",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  2200,
+                       "x1":  405,
+                       "x2":  705
+                   },
+                   {
+                       "y2":  2385,
+                       "text":  "保存报警限配置",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  2330,
+                       "x1":  430,
+                       "x2":  680
+                   },
+                   {
+                       "y2":  2515,
+                       "text":  "通知相关模块报警限已变更",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  2460,
+                       "x1":  390,
+                       "x2":  720
+                   },
+                   {
+                       "y2":  2645,
+                       "text":  "更新报警限推荐重新计算时刻",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  2590,
+                       "x1":  390,
+                       "x2":  720
+                   },
+                   {
+                       "y2":  2775,
+                       "text":  "清除当前推荐待处理状态",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  2720,
+                       "x1":  405,
+                       "x2":  705
+                   },
+                   {
+                       "y2":  2905,
+                       "text":  "隐藏或刷新推荐图标",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  2850,
+                       "x1":  430,
+                       "x2":  680
+                   },
+                   {
+                       "y2":  3035,
+                       "text":  "重置该参数分析窗口",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  2980,
+                       "x1":  405,
+                       "x2":  705
+                   },
+                   {
+                       "y2":  3165,
+                       "text":  "重新进入下一轮3分钟检测周期",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "fontSize":  8,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "oval",
+                       "y1":  3110,
+                       "x1":  410,
+                       "x2":  700
+                   },
+                   {
+                       "y2":  105,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  65,
+                       "x1":  410,
+                       "x2":  410
+                   },
+                   {
+                       "y2":  215,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  157,
+                       "x1":  410,
+                       "x2":  410
+                   },
+                   {
+                       "y2":  340,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  335,
+                       "x1":  410,
+                       "x2":  410
+                   },
+                   {
+                       "y2":  470,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  392,
+                       "x1":  410,
+                       "x2":  410
+                   },
+                   {
+                       "y2":  650,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  540,
+                       "x1":  410,
+                       "x2":  410
+                   },
+                   {
+                       "y2":  325,
+                       "text":  "是",
+                       "style":  {
+                                     "fontSize":  8,
+                                     "textColor":  "RGB(90,90,90)"
+                                 },
+                       "type":  "text",
+                       "y1":  305,
+                       "x1":  425,
+                       "x2":  460
+                   },
+                   {
+                       "y2":  210,
+                       "text":  "否",
+                       "style":  {
+                                     "fontSize":  8,
+                                     "textColor":  "RGB(90,90,90)"
+                                 },
+                       "type":  "text",
+                       "y1":  190,
+                       "x1":  425,
+                       "x2":  460
+                   },
+                   {
+                       "arrow":  "end",
+                       "points":  [
+                                      [
+                                          410,
+                                          335
+                                      ],
+                                      [
+                                          410,
+                                          360
+                                      ],
+                                      [
+                                          650,
+                                          360
+                                      ],
+                                      [
+                                          650,
+                                          105
+                                      ],
+                                      [
+                                          410,
+                                          105
+                                      ]
+                                  ],
+                       "type":  "polyline",
+                       "style":  {
+                                     "line":  "RGB(90,90,90)",
+                                     "weight":  1
+                                 }
+                   },
+                   {
+                       "arrow":  "end",
+                       "points":  [
+                                      [
+                                          315,
+                                          725
+                                      ],
+                                      [
+                                          190,
+                                          790
+                                      ],
+                                      [
+                                          190,
+                                          900
+                                      ]
+                                  ],
+                       "type":  "polyline",
+                       "style":  {
+                                     "line":  "RGB(90,90,90)",
+                                     "weight":  1
+                                 }
+                   },
+                   {
+                       "y2":  805,
+                       "text":  "是",
+                       "style":  {
+                                     "fontSize":  8,
+                                     "textColor":  "RGB(90,90,90)"
+                                 },
+                       "type":  "text",
+                       "y1":  785,
+                       "x1":  165,
+                       "x2":  200
+                   },
+                   {
+                       "y2":  1030,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  955,
+                       "x1":  190,
+                       "x2":  190
+                   },
+                   {
+                       "y2":  1160,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  1085,
+                       "x1":  190,
+                       "x2":  190
+                   },
+                   {
+                       "arrow":  "end",
+                       "points":  [
+                                      [
+                                          190,
+                                          1230
+                                      ],
+                                      [
+                                          535,
+                                          1270
+                                      ],
+                                      [
+                                          535,
+                                          1290
+                                      ]
+                                  ],
+                       "type":  "polyline",
+                       "style":  {
+                                     "line":  "RGB(90,90,90)",
+                                     "weight":  1
+                                 }
+                   },
+                   {
+                       "arrow":  "end",
+                       "points":  [
+                                      [
+                                          505,
+                                          725
+                                      ],
+                                      [
+                                          745,
+                                          820
+                                      ],
+                                      [
+                                          745,
+                                          1030
+                                      ]
+                                  ],
+                       "type":  "polyline",
+                       "style":  {
+                                     "line":  "RGB(90,90,90)",
+                                     "weight":  1
+                                 }
+                   },
+                   {
+                       "y2":  920,
+                       "text":  "否",
+                       "style":  {
+                                     "fontSize":  8,
+                                     "textColor":  "RGB(90,90,90)"
+                                 },
+                       "type":  "text",
+                       "y1":  900,
+                       "x1":  730,
+                       "x2":  765
+                   },
+                   {
+                       "y2":  1290,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  1085,
+                       "x1":  745,
+                       "x2":  535
+                   },
+                   {
+                       "y2":  1420,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  1400,
+                       "x1":  535,
+                       "x2":  535
+                   },
+                   {
+                       "y2":  1550,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  1475,
+                       "x1":  535,
+                       "x2":  535
+                   },
+                   {
+                       "arrow":  "end",
+                       "points":  [
+                                      [
+                                          460,
+                                          1680
+                                      ],
+                                      [
+                                          285,
+                                          1780
+                                      ],
+                                      [
+                                          285,
+                                          1810
+                                      ]
+                                  ],
+                       "type":  "polyline",
+                       "style":  {
+                                     "line":  "RGB(90,90,90)",
+                                     "weight":  1
+                                 }
+                   },
+                   {
+                       "y2":  1785,
+                       "text":  "否",
+                       "style":  {
+                                     "fontSize":  8,
+                                     "textColor":  "RGB(90,90,90)"
+                                 },
+                       "type":  "text",
+                       "y1":  1765,
+                       "x1":  260,
+                       "x2":  295
+                   },
+                   {
+                       "arrow":  "end",
+                       "points":  [
+                                      [
+                                          610,
+                                          1680
+                                      ],
+                                      [
+                                          815,
+                                          1780
+                                      ],
+                                      [
+                                          815,
+                                          1810
+                                      ]
+                                  ],
+                       "type":  "polyline",
+                       "style":  {
+                                     "line":  "RGB(90,90,90)",
+                                     "weight":  1
+                                 }
+                   },
+                   {
+                       "y2":  1785,
+                       "text":  "是",
+                       "style":  {
+                                     "fontSize":  8,
+                                     "textColor":  "RGB(90,90,90)"
+                                 },
+                       "type":  "text",
+                       "y1":  1765,
+                       "x1":  795,
+                       "x2":  830
+                   },
+                   {
+                       "arrow":  "end",
+                       "points":  [
+                                      [
+                                          285,
+                                          1865
+                                      ],
+                                      [
+                                          285,
+                                          1940
+                                      ],
+                                      [
+                                          560,
+                                          1940
+                                      ]
+                                  ],
+                       "type":  "polyline",
+                       "style":  {
+                                     "line":  "RGB(90,90,90)",
+                                     "weight":  1
+                                 }
+                   },
+                   {
+                       "arrow":  "end",
+                       "points":  [
+                                      [
+                                          815,
+                                          1865
+                                      ],
+                                      [
+                                          815,
+                                          1940
+                                      ],
+                                      [
+                                          690,
+                                          1940
+                                      ]
+                                  ],
+                       "type":  "polyline",
+                       "style":  {
+                                     "line":  "RGB(90,90,90)",
+                                     "weight":  1
+                                 }
+                   },
+                   {
+                       "y2":  2200,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  1995,
+                       "x1":  560,
+                       "x2":  555
+                   },
+                   {
+                       "y2":  2330,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  2255,
+                       "x1":  555,
+                       "x2":  555
+                   },
+                   {
+                       "y2":  2460,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  2385,
+                       "x1":  555,
+                       "x2":  555
+                   },
+                   {
+                       "y2":  2590,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  2515,
+                       "x1":  555,
+                       "x2":  555
+                   },
+                   {
+                       "y2":  2720,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  2645,
+                       "x1":  555,
+                       "x2":  555
+                   },
+                   {
+                       "y2":  2850,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  2775,
+                       "x1":  555,
+                       "x2":  555
+                   },
+                   {
+                       "y2":  2980,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  2905,
+                       "x1":  555,
+                       "x2":  555
+                   },
+                   {
+                       "y2":  3110,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  3035,
+                       "x1":  555,
+                       "x2":  555
+                   },
+                   {
+                       "arrow":  "end",
+                       "points":  [
+                                      [
+                                          630,
+                                          1345
+                                      ],
+                                      [
+                                          930,
+                                          1345
+                                      ],
+                                      [
+                                          930,
+                                          340
+                                      ],
+                                      [
+                                          520,
+                                          340
+                                      ]
+                                  ],
+                       "type":  "polyline",
+                       "style":  {
+                                     "line":  "RGB(90,90,90)",
+                                     "weight":  1
+                                 }
+                   },
+                   {
+                       "y2":  840,
+                       "text":  "否",
+                       "style":  {
+                                     "fontSize":  8,
+                                     "textColor":  "RGB(90,90,90)"
+                                 },
+                       "type":  "text",
+                       "y1":  820,
+                       "x1":  940,
+                       "x2":  975
+                   }
+               ],
+    "page":  {
+                 "scalePxPerInch":  150,
+                 "heightPx":  3210,
+                 "name":  "Flowchart Result",
+                 "widthPx":  1000
+             },
+    "referenceImage":  "C:/Users/yuanlichu/Documents/Codex/2026-05-28/uigiuf-codex-visio-replica-workflow-https/assets/examples/flowchart.png"
+}

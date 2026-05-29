@@ -1,0 +1,321 @@
+﻿{
+    "shapes":  [
+                   {
+                       "y2":  330,
+                       "text":  "AlarmLimitRecommendDetailViewQML`n--------------------------------`n+currentRecommendItem`n+onClicked: handle_recommend(paramId, type, true/false)",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "align":  0,
+                                     "fontSize":  9,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  150,
+                       "x1":  20,
+                       "x2":  520
+                   },
+                   {
+                       "y2":  555,
+                       "text":  "AlarmLimitRecommendSettingsViewQML`n--------------------------------`n+ComboBox analysisDuration`n+ComboBox alarmCount`n+ComboBox alarmTimePercent`n+CheckBox recommendParams",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "align":  0,
+                                     "fontSize":  9,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  390,
+                       "x1":  95,
+                       "x2":  440
+                   },
+                   {
+                       "y2":  675,
+                       "text":  "QObject",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "align":  0,
+                                     "fontSize":  9,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  600,
+                       "x1":  230,
+                       "x2":  305
+                   },
+                   {
+                       "y2":  890,
+                       "text":  "AlarmLimitRecommendDetailView`n--------------------------------",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "align":  0,
+                                     "fontSize":  9,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  815,
+                       "x1":  145,
+                       "x2":  390
+                   },
+                   {
+                       "y2":  420,
+                       "text":  "AlarmLimitRecommendSettingsView`n--------------------------------",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "align":  0,
+                                     "fontSize":  9,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  345,
+                       "x1":  730,
+                       "x2":  990
+                   },
+                   {
+                       "y2":  735,
+                       "text":  "AlarmLimitRecommendManager`n--------------------------------`n+Q_PROPERTY AlarmLimitRecommendSettingModel* settingModel`n+Q_PROPERTY AlarmLimitRecommendModel* recommendModel`n-AlarmLimitRecommendSettingModel* setting_model_`n-AlarmLimitRecommendModel* recommend_model_`n--------------------------------`n+handle_recommend(param_id, type, is_accept)`n+subscribe_recommend_updates()`n+on_recommend_update_received(update)`n+is_feature_visible()",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "align":  0,
+                                     "fontSize":  7,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  470,
+                       "x1":  575,
+                       "x2":  1120
+                   },
+                   {
+                       "y2":  645,
+                       "text":  "AlarmLimitRecommendSettingModel`n--------------------------------`n+Q_PROPERTY bool enabled`n+Q_PROPERTY QStringList recommendParamsOptions`n+Q_PROPERTY QStringList recommendParamsCurrent`n+Q_PROPERTY int analysisDurationIndex`n+Q_PROPERTY QVariantList analysisDurationOptions`n+Q_PROPERTY int alarmCountIndex`n+Q_PROPERTY QVariantList alarmCountOptions`n+Q_PROPERTY int alarmTimeRatioIndex`n+QStringList recommend_params_options_`nQStringList recommend_params_current_`nJIO_ComboBoxModelStruct analysis_duration_`nJIO_ComboBoxModelStruct alarm_count_group1_`nJIO_ComboBoxModelStruct alarm_count_group2_`nJIO_ComboBoxModelStruct alarm_count_group3_`nJIO_ComboBoxModelStruct alarm_time_percent_`n--------------------------------`n+detach_setting(data, from_restore)`n+to_json()`n+analysis_duration_seconds()`n+alarm_count_threshold()`n+alarm_time_ratio_threshold()`n+selected_param_ids()`n-switch_alarm_count_group(new_duration_index)`n-reset_alarm_time_ratio_to_default()",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "align":  0,
+                                     "fontSize":  7,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  20,
+                       "x1":  1220,
+                       "x2":  2290
+                   },
+                   {
+                       "y2":  945,
+                       "text":  "AlarmLimitRecommendModel`n--------------------------------`n+Q_PROPERTY bool hasRecommend`n+Q_PROPERTY QVariantList recommendItems`n-bool has_recommend_`n-QList\u003cAlarmLimitRecommendItem\u003e recommend_items_`n-QMap\u003cQString,int\u003e temp_recommend_limits_`n--------------------------------`n+get_recommend_detail(param_id, type)`n+set_recommend_limit(param_id, type, value)`n+update_items(items)`n+remove_item(param_id, type)`n+hasRecommendChanged()`n+recommendItemsChanged()",
+                       "style":  {
+                                     "line":  "RGB(128,93,255)",
+                                     "weight":  1,
+                                     "align":  0,
+                                     "fontSize":  7,
+                                     "fill":  "RGB(239,238,255)"
+                                 },
+                       "type":  "rect",
+                       "y1":  690,
+                       "x1":  1500,
+                       "x2":  2050
+                   },
+                   {
+                       "y2":  360,
+                       "text":  "持有",
+                       "style":  {
+                                     "fontSize":  8,
+                                     "textColor":  "RGB(70,70,70)"
+                                 },
+                       "type":  "text",
+                       "y1":  330,
+                       "x1":  1160,
+                       "x2":  1230
+                   },
+                   {
+                       "y2":  410,
+                       "text":  "绑定",
+                       "style":  {
+                                     "fontSize":  8,
+                                     "textColor":  "RGB(70,70,70)"
+                                 },
+                       "type":  "text",
+                       "y1":  380,
+                       "x1":  1180,
+                       "x2":  1240
+                   },
+                   {
+                       "y2":  745,
+                       "text":  "调用 handle_recommend",
+                       "style":  {
+                                     "fontSize":  8,
+                                     "textColor":  "RGB(70,70,70)"
+                                 },
+                       "type":  "text",
+                       "y1":  715,
+                       "x1":  420,
+                       "x2":  570
+                   },
+                   {
+                       "y2":  865,
+                       "text":  "绑定 recommendItems / get_recommend_detail",
+                       "style":  {
+                                     "fontSize":  8,
+                                     "textColor":  "RGB(70,70,70)"
+                                 },
+                       "type":  "text",
+                       "y1":  825,
+                       "x1":  900,
+                       "x2":  1080
+                   },
+                   {
+                       "y2":  770,
+                       "text":  "持有",
+                       "style":  {
+                                     "fontSize":  8,
+                                     "textColor":  "RGB(70,70,70)"
+                                 },
+                       "type":  "text",
+                       "y1":  740,
+                       "x1":  1320,
+                       "x2":  1380
+                   },
+                   {
+                       "y2":  530,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  475,
+                       "x1":  440,
+                       "x2":  575
+                   },
+                   {
+                       "y2":  610,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  true,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  630,
+                       "x1":  305,
+                       "x2":  575
+                   },
+                   {
+                       "y2":  620,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  true,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  850,
+                       "x1":  390,
+                       "x2":  575
+                   },
+                   {
+                       "y2":  350,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  530,
+                       "x1":  1120,
+                       "x2":  1220
+                   },
+                   {
+                       "y2":  385,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  true,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  385,
+                       "x1":  990,
+                       "x2":  1220
+                   },
+                   {
+                       "y2":  790,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  735,
+                       "x1":  1120,
+                       "x2":  1500
+                   },
+                   {
+                       "y2":  850,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  true,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  850,
+                       "x1":  390,
+                       "x2":  1500
+                   },
+                   {
+                       "y2":  290,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  250,
+                       "x1":  520,
+                       "x2":  1220
+                   },
+                   {
+                       "y2":  600,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  475,
+                       "x1":  440,
+                       "x2":  230
+                   },
+                   {
+                       "y2":  640,
+                       "arrow":  "end",
+                       "type":  "line",
+                       "style":  {
+                                     "weight":  1,
+                                     "dash":  false,
+                                     "line":  "RGB(90,90,90)"
+                                 },
+                       "y1":  850,
+                       "x1":  390,
+                       "x2":  230
+                   }
+               ],
+    "page":  {
+                 "scalePxPerInch":  110,
+                 "heightPx":  980,
+                 "name":  "Class Diagram Result",
+                 "widthPx":  2300
+             },
+    "referenceImage":  "C:/Users/yuanlichu/Documents/Codex/2026-05-28/uigiuf-codex-visio-replica-workflow-https/assets/examples/class-diagram.png"
+}
