@@ -31,19 +31,37 @@ EdanImageToVisio 是一个 Agent Skill，用于把参考图片、截图、Mermai
 
 类图会优先保留类框、属性区、方法区、继承/持有/绑定关系和连线方向。转换成 `.vsdx` 后，类名、成员文本、分区线和关系箭头都可以继续编辑，适合后续在 Visio 中调整布局、补充字段或整理依赖关系。
 
+原图：
+
 ![类图示例](assets/examples/class-diagram.png)
+
+生成结果预览：
+
+![类图生成结果](assets/examples/results/class-diagram-result.png)
 
 ### 流程图
 
-流程图会优先保留开始/结束节点、处理节点、判断菱形、分支标签和回环路径。转换成 `.vsdx` 后，每个节点和箭头都是独立对象，适合继续修改节点文字、调整分支走向或把长流程拆成多页。
+流程图会优先保留开始/结束节点、处理节点、判断节点、分支标签和回环路径。转换成 `.vsdx` 后，每个节点和箭头都是独立对象，适合继续修改节点文字、调整分支走向或把长流程拆成多页。当前脚本暂不支持原生菱形节点，示例结果中使用可编辑矩形近似表达判断节点。
+
+原图：
 
 ![流程图示例](assets/examples/flowchart.png)
+
+生成结果预览：
+
+![流程图生成结果](assets/examples/results/flowchart-result.png)
 
 ### 时序图
 
 时序图会优先保留参与者、生命线、同步/异步消息、虚线通知和自调用步骤。转换成 `.vsdx` 后，参与者框、竖向生命线、消息箭头和说明文本都可以单独编辑，适合把 Mermaid 生成的时序图整理成正式交付文档。
 
+原图：
+
 ![时序图示例](assets/examples/sequence-diagram.png)
+
+生成结果预览：
+
+![时序图生成结果](assets/examples/results/sequence-diagram-result.png)
 
 ## 环境要求
 
